@@ -12,8 +12,8 @@ if memo_type == 1
    puts "Ctrl+Dで保存します"
    memo = STDIN.read
 
-   CSV.open("#{file_name}.cvs", "w") do |csv|
-   csv << memo
+   CSV.open("#{file_name}.csv", "w") do |csv|
+   csv << "#{memo}"
 end
 
 elsif
@@ -25,10 +25,11 @@ elsif
    memo = STDIN.read
 
    CSV.open("#{file_name}.csv", "a") do |csv|
-   csv << memo
+   csv << "#{memo}"
 end
 
 elsif
     puts "1か2を入力して下さい。"
 end
+
 
