@@ -31,5 +31,3 @@ end
 elsif
     puts "1か2を入力して下さい。"
 end
-
-
